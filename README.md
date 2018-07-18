@@ -199,3 +199,39 @@ There are a few steps you may want to take to troubleshoot these kinds of errors
 If you're not able to scan the QR code, make sure your phone's camera is focusing correctly, and also make sure that the contrast on the two colors in your terminal is high enough. For example, WebStorm's default themes may [not have enough contrast](https://github.com/react-community/create-react-native-app/issues/49) for terminal QR codes to be scannable with the system barcode scanners that the Expo app uses.
 
 If this causes problems for you, you may want to try changing your terminal's color theme to have more contrast, or running Create React Native App from a different terminal. You can also manually enter the URL printed by the packager script in the Expo app's search bar to load it manually.
+
+
+##TODO:
+FREE VECTOR MAPS – Updated August 2013
+LICENSE AGREEMENT
+THIS LICENSE AGREEMENT is between you, the licensee, and Striped Candy LLC, the licensor. By purchasing or downloading any stock maps, icons or digital items licensed by Striped Candy LLC, you automatically agree to the following terms and conditions:
+All ownership and copyright of the licensed maps, icons or digital items remain the property of Striped Candy LLC.
+The maps, icons or digital items can be used royalty-free by the licensee for personal, commercial, and client projects, including advertising, web design, software application, multimedia design, film, video, computer games, catalogues, brochures, promotional greeting cards and promotional postcards (i.e. not for resale, license or other distribution) up to 250,000 copies. Any additional uses must be approved by Striped Candy LLC in writing.
+Our maps, icons or digital items may be altered, cropped or otherwise modified or manipulated for your needs.
+Your purchase or use of our maps, icons or digital items implies that you have read and accepted the terms of this license. If you have any questions or concerns regarding this license, or wish to negotiate an alternate license for a use not permitted here, please contact us.
+All purchasers or downloaders must also abide by the following restrictions:
+You may not sub-license, resell, rent, transfer, or redistribute the maps, icons or digital items without express written permission from Striped Candy LLC.
+You may not use them at places like Cafe Press, Zazzle or any print on demand service.
+You may not place these licensed maps, icons or digital items on any website in a complete or archived downloadable format or enable it to be distributed in any other way.
+The maps, icons or digital items may not be placed on any electronic bulletin board or downloadable format.
+Making modifications or alterations to any of our maps, icons or digital items or other materials does not free you to then sell, license or distribute them to anyone else.
+Our maps, icons or digital items may not be incorporated into a logo or other trademark without written permission of Striped Candy LLC.
+Our maps, icons or digital items may not be used to create merchandise or items for resale without written permission of Striped Candy LLC.
+You may not use, or allow anyone else to use our maps, icons or digital items to create pornographic, libelous, obscene or defamatory material.
+ATTRIBUTION
+Free downloads require attribution. Please provide a note and link on your website, like "Map by Free Vector Maps" or similar, plus a link back to http://freevectormaps.com, is the preferred form of attribution. If you are unable to provide the appropriate attribution, please purchase a Royalty Free License.
+TERMINATION & REVOCATION
+The license contained in this agreement will automatically terminate without notice from Striped Candy LLC if you fail to comply with any of the provisions of this agreement or fail to pay in full. Upon termination, you must immediately stop using our symbols, delete or remove all material containing our symbols from your premises and confirm completion of this to Striped Candy LLC in writing. If Striped Candy LLC finds anyone guilty of copying, stealing, reselling, leasing or renting our symbols and/or symbol designs, all licenses of said person will automatically be cancelled and they will be liable to legal action.
+Striped Candy LLC reserves the right to revoke the license to use the Licensed Material for good cause and elect to replace such Licensed Material with alternative Licensed Material. Upon notice of any revocation of such license, you shall immediately cease using such Licensed Material and shall where possible ensure that your clients and customers do likewise. You shall delete all electronic copies of Licensed Material from electronic storage media, confirming the same to Striped Candy LLC in writing.
+PAYMENT
+We use Stripe, http://stripe.com, for payments. You can read their Terms of Service and Privacy Policy on their site.
+REFUND POLICY
+No refund will be offered for products once sold. Since these are digital files, all maps and assets are not refundable or exchangeable. However, files can be replaced if damaged or lost. Simply send an email to hello@freevectormaps.com
+DISCLAIMER
+All licensed maps, icons or digital items are provided “as is” without warranty of any kind, either expressed or implied. Striped Candy LLC is not liable for any damages arising out of any defects in our materials. You agree to hold Striped Candy LLC harmless for any result that may occur during the course of using, or inability to use these licensed maps, icons or digital items. In no event shall we be liable for any damages including, but not limited to, direct, indirect, special, incidental or consequential damages or other losses arising out of the use of or inability to use our products.
+Striped Candy LLC makes no claims as to the completeness, accuracy or content of the maps or data, and makes no representation of any kind, including, but not limited to, any warranty as to the accuracy or fitness of the maps or data for a particular use (nor shall the act of distribution constitute any such warranty).
+Whilst we make every attempt possible to provide the most accurate up-to-date maps, it must be emphasized that we cannot guarantee their accuracy. If you have questions regarding the geo data used to create these maps, please visit the Natural Earth website, http://www.naturalearthdata.com.
+CONTACT
+hello@freevectormaps.com
+RESERVED RIGHTS
+We reserve rights to change the prices of our maps, icons, digital items and/or map bundles without prior notice and at our sole discretion. We reserve the rights to make changes to these ‘Terms and Conditions and License Agreement’ without any prior notice at our sole discretion. Any such changes will reflect at http://www.freevectormaps.com.
