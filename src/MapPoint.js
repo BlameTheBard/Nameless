@@ -6,12 +6,13 @@ export default class MapPoint extends React.Component {
     static defaultProps = {};
 
     render() {
+    const { active, xpos, ypos, navigation } = this.props;
         return (
-            <View style={{position: 'absolute', left: this.props.xpos, top: this.props.ypos}}>
+            <View style={{position: 'absolute', left: xpos, top: ypos}}>
                 <Icon
                     name='place'
-                    color='#AD2400'
-                    onPress={() => this.props.navigation.navigate('Details')}
+                    color={active ? '#AD2400' : '#b3b3b3'}
+                    onPress={() => navigation.navigate('Details')}
                 />
             </View>
         );
