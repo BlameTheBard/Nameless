@@ -21,10 +21,16 @@ const TEST_DATA = {
         ypos: 200
     },
     'episode_three': {
-        active: true,
+        active: false,
         title: "Episode 3",
         xpos: 250,
         ypos: 190
+    },
+    'episode_four': {
+        active: true,
+        title: "Episode 4",
+        xpos: 240,
+        ypos: 160
     }
 };
 
@@ -45,9 +51,7 @@ export default class HomeScreen extends React.Component {
         for (const key in TEST_DATA) {
             // skip loop if the property is from prototype
             if (!TEST_DATA.hasOwnProperty(key)) continue;
-
             const obj = TEST_DATA[key];
-
             const mapPoint = <MapPoint active={obj.active} key={key} navigation={navigation} xpos={obj.xpos} ypos={obj.ypos}/>
 
             episodeLayout.push(mapPoint);
@@ -92,7 +96,7 @@ const styles = StyleSheet.create({
     fullMap:{
         position: 'absolute',
         width: '100%',
-        height: '100%'
+        height: '110%'
     },
     pathSegment1:{
         borderRadius: 2,
@@ -125,7 +129,7 @@ const styles = StyleSheet.create({
     },
     mapContainer: {
         backgroundColor: '#fff0a1',
-        flex: 3,
+        flex: 5,
         width:'100%'
     },
     summaryContainer: {

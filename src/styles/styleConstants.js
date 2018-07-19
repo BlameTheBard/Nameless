@@ -5,6 +5,5 @@ module.exports = {
         HOME_SCREEN: '#fff',
         STORY_SCREEN: '#ff96ec',
         SETTINGS_SCREEN: '#7fa5ff',
-
     }
 };
