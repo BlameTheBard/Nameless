@@ -1,6 +1,9 @@
 import React from 'react';
 import { View, Text, StyleSheet, Button, Image } from 'react-native';
-import MapPoint from './MapPoint';
+import MapPoint from '../components/MapPoint';
+import { Icon } from 'react-native-elements';
+const constants = require('../styles/styleConstants');
+
 //TODO: Orientation of the screen...Changes images and stuff.
 //ToDo: break out Path to its own thing, but testing here.
 
@@ -30,6 +33,8 @@ export default class HomeScreen extends React.Component {
 
     static navigationOptions = {
         title: 'Map',
+        tabBarIcon: <Icon name='explore'/>,
+        tabBarColor: constants.COLORS.HOME_SCREEN
     };
 
     render() {
@@ -52,8 +57,7 @@ export default class HomeScreen extends React.Component {
         return (
             <View style={styles.container}>
                 <View style={styles.mapContainer}>
-                    <Image style={styles.fullMap} source={ require('./mediaAssets/AQ-EPS-01-0001.png') } />
-                    <Text>MAP</Text>
+                    <Image style={styles.fullMap} source={ require('../mediaAssets/AQ-EPS-01-0001.png') } />
                     <View style={styles.pathSegment1} />
                     <View style={styles.pathSegment2} />
                     <View style={styles.pathSegment3} />
@@ -68,11 +72,11 @@ export default class HomeScreen extends React.Component {
                         onPress={() => navigation.navigate('Details')}
                     />
                 </View>
-                <Button
-                    style={styles.menuButton}
-                    title="Menu"
-                    onPress={() => navigation.openDrawer()}
-                />
+                {/*<Button*/}
+                    {/*style={styles.menuButton}*/}
+                    {/*title="Menu"*/}
+                    {/*onPress={() => navigation.openDrawer()}*/}
+                {/*/>*/}
             </View>
         );
     }
@@ -81,7 +85,7 @@ export default class HomeScreen extends React.Component {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#fff',
+        backgroundColor: constants.COLORS.HOME_SCREEN,
         alignItems: 'center',
         justifyContent: 'center',
     },

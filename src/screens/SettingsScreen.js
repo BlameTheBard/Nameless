@@ -1,15 +1,20 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
+import { Icon } from 'react-native-elements';
+const constants = require('../styles/styleConstants');
 
-export default class EpisodeDetails extends React.Component {
+
+export default class StoryScreen extends React.Component {
     static navigationOptions = {
-        title: 'Episode Details',
+        title: 'Settings',
+        tabBarIcon: <Icon name='build' />,
+        tabBarColor: constants.COLORS.SETTINGS_SCREEN
     };
 
     render() {
         return (
             <View style={styles.container}>
-                <Text>EPISODE DETAILS</Text>
+                <Text>Settings</Text>
             </View>
         );
     }
@@ -18,7 +23,7 @@ export default class EpisodeDetails extends React.Component {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#4aff57',
+        backgroundColor: constants.COLORS.SETTINGS_SCREEN,
         alignItems: 'center',
         justifyContent: 'center',
     },

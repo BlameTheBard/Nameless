@@ -1,6 +1,6 @@
 import { createDrawerNavigator } from 'react-navigation';
-import HomeScreen from './HomeScreen';
-import EpisodeDetails from './EpisodeDetails';
+import HomeScreen from './screens/HomeScreen';
+import EpisodeDetails from './screens/EpisodeDetails';
 
 export default PrimaryNav = createDrawerNavigator({
     Map: {
@@ -9,4 +9,15 @@ export default PrimaryNav = createDrawerNavigator({
     Details: {
         screen: EpisodeDetails,
     },
+});
+
+
+export default createMaterialBottomTabNavigator({
+    Album: { screen: HomeScreen },
+    Library: { screen: EpisodeDetails },
+}, {
+    initialRouteName: 'HomeScreen',
+    activeTintColor: '#f0edf6',
+    inactiveTintColor: '#3e2465',
+    barStyle: { backgroundColor: '#694fad' },
 });
