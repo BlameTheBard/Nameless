@@ -12,7 +12,7 @@ export default class MapPoint extends React.Component {
                 <Icon
                     name='place'
                     color={active ? '#AD2400' : '#b3b3b3'}
-                    onPress={() => navigation.navigate('Details')}
+                    onPress={() => navigation.navigate('Episodes')}
                 />
             </View>
         );
