@@ -2,6 +2,7 @@ import React from 'react';
 import { View, Text, StyleSheet, Button, Image } from 'react-native';
 import MapPoint from '../components/MapPoint';
 import { Icon } from 'react-native-elements';
+import { NavigationActions } from 'react-navigation';
 const constants = require('../styles/styleConstants');
 
 //TODO: Orientation of the screen...Changes images and stuff.
@@ -47,12 +48,19 @@ export default class HomeScreen extends React.Component {
        const { navigation } = this.props;
        const episodeLayout = [];
 
-
-        for (const key in TEST_DATA) {
+       for (const key in TEST_DATA) {
             // skip loop if the property is from prototype
             if (!TEST_DATA.hasOwnProperty(key)) continue;
             const obj = TEST_DATA[key];
-            const mapPoint = <MapPoint active={obj.active} key={key} navigation={navigation} xpos={obj.xpos} ypos={obj.ypos}/>
+            const mapPoint =
+                <MapPoint
+                    active={obj.active}
+                    key={key}
+                    navigation={navigation}
+                    title={obj.title}
+                    xpos={obj.xpos}
+                    ypos={obj.ypos}
+                />
 
             episodeLayout.push(mapPoint);
         }
@@ -73,14 +81,9 @@ export default class HomeScreen extends React.Component {
                     <Text>Shake your phone to open the developer menu.</Text>
                     <Button
                         title="Go to Details"
-                        onPress={() => navigation.navigate('Details')}
+                        onPress={() => navigation.navigate('Episodes')}
                     />
                 </View>
-                {/*<Button*/}
-                    {/*style={styles.menuButton}*/}
-                    {/*title="Menu"*/}
-                    {/*onPress={() => navigation.openDrawer()}*/}
-                {/*/>*/}
             </View>
         );
     }

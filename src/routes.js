@@ -9,7 +9,10 @@ import SettingsScreen from '../src/screens/SettingsScreen';
 
 export const TabNav = createMaterialBottomTabNavigator({
     Map: { screen: HomeScreen },
-    Episodes: { screen: EpisodesScreen },
+    Episodes: { screen: EpisodesScreen,
+        navigationOptions: ({ state }) => ({
+            params: '',
+        })},
     Story: { screen: StoryScreen},
     Achievements: { screen: Achievements },
     Settings: { screen: SettingsScreen},
