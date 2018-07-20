@@ -1,15 +1,18 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
+import { Icon } from 'react-native-elements';
+import { TabNav } from '../routes'
+const constants = require('../styles/styleConstants');
 
-export default class EpisodeDetails extends React.Component {
+export default class SingleEpisodeScreen extends React.Component {
     static navigationOptions = {
-        title: 'Episode Details',
+        title: 'Single Episode',
     };
 
     render() {
         return (
             <View style={styles.container}>
-                <Text>EPISODE DETAILS</Text>
+                <Text>Single Episode Play!</Text>
             </View>
         );
     }
@@ -18,7 +21,7 @@ export default class EpisodeDetails extends React.Component {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#4aff57',
+        backgroundColor: constants.COLORS.ACHIEVEMENTS_SCREEN,
         alignItems: 'center',
         justifyContent: 'center',
     },
