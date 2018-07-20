@@ -8,30 +8,57 @@ const constants = require('../styles/styleConstants');
 //TODO: Orientation of the screen...Changes images and stuff.
 //ToDo: break out Path to its own thing, but testing here.
 
-const TEST_DATA = {
-    'episode_one': {
+export const TEST_DATA = {
+    '1': {
         active: false,
+        description: 'the small brown fox jumped over the lazy dog and this is a longer desc for a reason.',
         title: "Episode 1",
         xpos: 100,
         ypos: 100
     },
-    'episode_two': {
+    '2': {
         active: false,
+        description: 'the small brown fox jumped over the lazy dog and this is a longer desc for a reason.' +
+        'I am also a long desc. Because I need to test that shit. Otherwise UX breaks and no one has a clue why,' +
+        'so here we are with the longass desc.',
         title: "Episode 2",
         xpos: 200,
         ypos: 200
     },
-    'episode_three': {
+    '3': {
         active: false,
+        description: 'WHATEVER',
         title: "Episode 3",
         xpos: 250,
         ypos: 190
     },
-    'episode_four': {
-        active: true,
+    '4': {
+        active: false,
+        description: 'LOOK AT ME I am a descripton.',
         title: "Episode 4",
         xpos: 240,
         ypos: 160
+    },
+    '5': {
+        active: false,
+        description: 'LOOK AT ME I am a descripton.',
+        title: "Episode 5",
+        xpos: 250,
+        ypos: 200
+    },
+    '6': {
+        active: false,
+        description: 'LOOK AT ME I am a descripton.',
+        title: "Episode 6",
+        xpos: 350,
+        ypos: 300
+    },
+    '7': {
+        active: true,
+        description: 'LOOK AT ME I am a descripton.',
+        title: "Episode 7",
+        xpos: 250,
+        ypos: 300
     }
 };
 
@@ -76,7 +103,7 @@ export default class HomeScreen extends React.Component {
                     {episodeLayout}
                 </View>
                 <View style={styles.summaryContainer}>
-                    <Text>Open up App.js to start working on your app!</Text>
+                    <Text >Open up App.js to start working on your app!</Text>
                     <Text>Changes you make will automatically reload.</Text>
                     <Text>Shake your phone to open the developer menu.</Text>
                     <Button
@@ -136,7 +163,7 @@ const styles = StyleSheet.create({
         width:'100%'
     },
     summaryContainer: {
-        backgroundColor: '#c4fff7',
+        backgroundColor: '#052E05',
         flex: 1
     },
     menuButton: {
