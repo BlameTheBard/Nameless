@@ -7,7 +7,7 @@ export default class StoryScreen extends React.Component {
     static navigationOptions = {
         title: 'Story',
         tabBarIcon: ({focused, tintcolor}) => {
-            return <Icon color={tintcolor} name='landscape'/>
+            return <Icon color={constants.COLORS.ICONCOLOR} name='landscape'/>
         },
         tabBarColor: constants.COLORS.STORY_SCREEN,
     };

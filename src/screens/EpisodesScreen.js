@@ -9,7 +9,7 @@ import { TEST_DATA } from '../screens/HomeScreen'
 export default class EpisodesScreen extends React.Component {
     static navigationOptions = {
         title: 'Episodes',
-        tabBarIcon: <Icon name="playlist-play" />,
+        tabBarIcon: <Icon name="playlist-play" color={constants.COLORS.ICONCOLOR}/>,
         tabBarColor: constants.COLORS.EPISODES_SCREEN
 
     };

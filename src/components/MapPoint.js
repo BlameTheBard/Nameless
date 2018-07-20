@@ -1,6 +1,8 @@
 import React from 'react';
 import { View, StyleSheet } from 'react-native';
 import { Icon } from 'react-native-elements';
+const constants = require('../styles/styleConstants');
+
 
 export default class MapPoint extends React.Component {
     static defaultProps = {};
@@ -11,7 +13,7 @@ export default class MapPoint extends React.Component {
             <View style={{position: 'absolute', left: xpos, top: ypos}}>
                 <Icon
                     name='place'
-                    color={active ? '#AD2400' : '#b3b3b3'}
+                    color={active ? constants.COLORS.ACTIVE_MAPPOINT : constants.COLORS.INACTIVE_MAPPOINT}
                     onPress={() => navigation.navigate('Episodes', {
                         title
                     })}

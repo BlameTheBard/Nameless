@@ -7,7 +7,7 @@ const constants = require('../styles/styleConstants');
 export default class StoryScreen extends React.Component {
     static navigationOptions = {
         title: 'Settings',
-        tabBarIcon: <Icon name='build' />,
+        tabBarIcon: <Icon name='build' color={constants.COLORS.ICONCOLOR} />,
         tabBarColor: constants.COLORS.SETTINGS_SCREEN
     };
 

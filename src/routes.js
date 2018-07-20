@@ -1,5 +1,7 @@
 import { createStackNavigator } from 'react-navigation'; // Version can be specified in package.json
 import { createMaterialBottomTabNavigator } from 'react-navigation-material-bottom-tabs'
+const constants = require('./styles/styleConstants');
+
 import HomeScreen from '../src/screens/HomeScreen';
 import EpisodesScreen from '../src/screens/EpisodesScreen';
 import StoryScreen from '../src/screens/StoryScreen';
@@ -17,27 +19,19 @@ export const TabNav = createMaterialBottomTabNavigator({
     Achievements: { screen: Achievements },
     Settings: { screen: SettingsScreen},
 }, {
-    activeTintColor: '#0a0a0a',
+    activeTintColor: constants.COLORS.ICONCOLOR,
     inactiveTintColor: '#3e2465',
     initialRouteName: 'Map',
     labeled: true,
-    barStyle: { backgroundColor: '#694fad' },
 });
-
-// export const extraNav = createStackNavigator(
-//     {
-//         SinglePage: SingleEpisode,
-//         Tabs: TabNav
-//     },
-// );
 
 export const RootStackNav = createStackNavigator(
     {
         Tabs: {
             screen: TabNav
-        },
-        // SinglePage: {
-        //     screen: extraNav,
-        // }
+        }
     },
+    {
+        headerMode: 'none',
+    }
 );
