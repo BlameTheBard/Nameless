@@ -4,7 +4,7 @@ import { Icon } from 'react-native-elements';
 import EpisodeDetails from '../components/EpisodeDetails';
 import EpisodeTile from '../components/EpisodeTile';
 const constants = require('../styles/styleConstants');
-import { TEST_DATA } from '../screens/HomeScreen'
+import { TEST_DATA } from '../constants'
 
 export default class EpisodesScreen extends React.Component {
     static navigationOptions = {
