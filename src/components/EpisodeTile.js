@@ -25,7 +25,7 @@ export default class EpisodeTile extends React.Component {
                         }}
                         style={{width: 32, height:32}}
                     />
-                    <Text style={{color: '#fff', paddingLeft: 20, paddingRight: 20, flexShrink: 1}} numberOfLines={3}>{description}</Text>
+                    <Text style={{paddingLeft: 20, paddingRight: 20, flexShrink: 1}} numberOfLines={3}>{description}</Text>
                     <Icon styles={styles.episodeIcon} name="play-arrow" />
                 </View>
             </View>
@@ -37,7 +37,7 @@ const styles = StyleSheet.create({
     container: {
     //     alignItems: 'center',
         borderColor: constants.COLORS.ACCENT,
-        backgroundColor: constants.COLORS.PRIMARYBG,
+        backgroundColor: constants.COLORS.STORY_SCREEN,
         borderRadius: 3,
         padding: 10,
         marginTop: 5,

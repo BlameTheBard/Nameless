@@ -12,5 +12,14 @@ export const sharedStyles = StyleSheet.create({
         fontSize: 20,
         fontWeight: 'bold',
         padding: 10,
+    },
+    mainButton: {
+        backgroundColor: constants.COLORS.EPISODES_SCREEN,
+        padding: 12,
+        margin: 16,
+        justifyContent: 'center',
+        alignItems: 'center',
+        borderRadius: 4,
+        borderColor: 'rgba(0, 0, 0, 0.1)',
     }
 });

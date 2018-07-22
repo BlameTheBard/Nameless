@@ -171,7 +171,7 @@ const styles = StyleSheet.create({
         width: '110%'
     },
     carouselImg: {
-        backgroundColor: constants.COLORS.EPISODES_SCREEN,
+        backgroundColor: 'green',
         height: 100,
         width: 100,
     },

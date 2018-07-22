@@ -4,6 +4,7 @@ import { Icon } from 'react-native-elements';
 import EpisodeDetails from '../components/EpisodeDetails';
 import EpisodeTile from '../components/EpisodeTile';
 const constants = require('../styles/styleConstants');
+import { sharedStyles } from '../styles/jointStyles';
 import { TEST_DATA } from '../constants'
 
 export default class EpisodesScreen extends React.Component {
@@ -18,7 +19,6 @@ export default class EpisodesScreen extends React.Component {
         const { navigation } = this.props;
         // BLARG::: console.log(navigation);
         const episodeTitle = navigation.getParam('title', '');
-        console.log('blarg testdata:', TEST_DATA);
 
         if( episodeTitle ) {
             return (<EpisodeDetails navigation={navigation} title={episodeTitle}/>)
@@ -47,7 +47,7 @@ export default class EpisodesScreen extends React.Component {
         //button to change view screen.
         return (
             <View style={styles.container}>
-                <Text style={styles.title}>EPISODE DETAILS</Text>
+                <Text style={sharedStyles.titleText}>EPISODE DETAILS</Text>
                 <ScrollView
                     contentContainerStyle={{
                          alignItems: 'stretch',
@@ -65,14 +65,8 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         backgroundColor: constants.COLORS.EPISODES_SCREEN,
         flexGrow: 1,
+        paddingTop: 20,
         // height: '100%',
         // width: '100%',
     },
-    title: {
-        backgroundColor: constants.COLORS.ACCENT,
-        color: constants.COLORS.DARKTITLE,
-        fontSize: 20,
-        fontWeight: 'bold',
-        padding: 20,
-    }
 });
