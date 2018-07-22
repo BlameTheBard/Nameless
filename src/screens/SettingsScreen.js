@@ -35,6 +35,15 @@ export default class SettingsScreen extends React.Component {
     render() {
         return (
             <View style={styles.container}>
+                <TouchableOpacity>
+                    <Text>User Stuff</Text>
+                </TouchableOpacity>
+                <TouchableOpacity>
+                    <Text>Episode Stuff</Text>
+                </TouchableOpacity>
+                <TouchableOpacity>
+                    <Text>???</Text>
+                </TouchableOpacity>
                 {this._renderButton('Default modal', () => this.setState({ visibleModal: 1 }))}
                 {this._renderButton('Sliding from the sides', () => this.setState({ visibleModal: 2 }))}
                 {this._renderButton('A slower modal', () => this.setState({ visibleModal: 3 }))}
@@ -82,6 +91,7 @@ export default class SettingsScreen extends React.Component {
 
 const styles = StyleSheet.create({
     container: {
+        backgroundColor: constants.COLORS.SETTINGS_SCREEN,
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',

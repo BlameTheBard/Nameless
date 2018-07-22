@@ -19,13 +19,13 @@ export default class EpisodeDetails extends React.Component {
                 <Text>Elapsed Time:</Text>
                 <View style={{flexDirection: 'row'}}>
                     <TouchableOpacity>
-                        <Icon color={constants.COLORS.ICONCOLOR} size='50' name="rotate-left" />
+                        <Icon color={constants.COLORS.ICONCOLOR} size={50} name="rotate-left" />
                     </TouchableOpacity>
                     <TouchableOpacity>
-                        <Icon color={constants.COLORS.ICONCOLOR} size='50' name="play-arrow" />
+                        <Icon color={constants.COLORS.ICONCOLOR} size={50} name="play-arrow" />
                     </TouchableOpacity>
                     <TouchableOpacity>
-                        <Icon color={constants.COLORS.ICONCOLOR} size='50' name="stop" />
+                        <Icon color={constants.COLORS.ICONCOLOR} size={50} name="stop" />
                     </TouchableOpacity>
                 </View>
 
